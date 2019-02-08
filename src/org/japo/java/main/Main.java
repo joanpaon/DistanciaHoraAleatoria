@@ -1,4 +1,4 @@
-package org.japojava.main;
+package org.japo.java.main;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -23,7 +23,7 @@ public class Main {
         int mAct = gc.get(Calendar.MINUTE);
         int sAct = gc.get(Calendar.SECOND);
 
-        // Tiempos
+        // Tiempos > Segundos
         int tiempoIni = H_INI * 3600 + M_INI * 60 + S_INI;
         int tiempoAct = hAct * 3600 + mAct * 60 + sAct;
         int tiempoRnd = rnd.nextInt(tiempoAct - tiempoIni + 1) + tiempoIni;
@@ -42,8 +42,8 @@ public class Main {
         int sDis = tiempoDis % 60;
 
         // Salidas
-        System.out.printf("Hora actual ......: %02d:%02d:%02d\n", hAct, mAct, sAct);
-        System.out.printf("Hora inicio ......: %02d:%02d:%02d\n", hRnd, mRnd, sRnd);
-        System.out.printf("Tiempo de clase ..: %2d:%02d:%02d\n", hDis, mDis, sDis);
+        System.out.printf("Hora actual ......: %02d:%02d:%02d%n", hAct, mAct, sAct);
+        System.out.printf("Hora inicio ......: %02d:%02d:%02d%n", hRnd, mRnd, sRnd);
+        System.out.printf("Tiempo de clase ..: %2d:%02d:%02d%n", hDis, mDis, sDis);
     }
 }
